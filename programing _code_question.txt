@@ -1,0 +1,57 @@
+factory and service 
+html and css
+directivs
+
+
+javascripts
+html5
+	
+css3
+
+middleware:
+
+-where use resonse and request.
+
+
+Q1. Input is a string “classmate”. Extract the letters, which are at the even places using python.
+Ans: def eve_place(en):
+st=[]	
+st=en.strip(‘,’)
+	length=len(st)
+	For x  in range(0:length):
+		If x%2==0:
+			print(st[x])
+ 
+ Have you put your phone on mute. I cant hear you !
+
+    li=[n for n in range()]	
+
+Q2. Gmail account, fetch mail ids, read subject line. Then compare the body with a particular string. If it matches, then respond.
+Ans: 
+
+Q3 . write a python code to swap 2 number
+Ans: a=1
+        b=2
+
+a,b=b,a
+
+A, b = (1, 2)
+
+Q4. Get a string input. Write python code to check  if this is a palindrome.
+Ans:
+ 		Def pln(st)
+input_st=[]
+Input_st = st
+If len(st)>1:
+				Rev_st = input_st[::-1]	
+			If input_st == rev_st:
+				print(“its palindrome”)
+Q5. Write a python code for: Take a number input. Print “TWO” if divisible by 2, print “THREE” if divisible by 3. Print “BOTH”, if divisible by both.
+Ans:    
+	n = input(“Enter Your Number”)
+if (n%3==0) and (n%2 == 0):
+		print(“BOTH”)
+	elsif (n%3==0):
+		print(“THREE”)
+elsif (n%2 == 0):
+	print(“TWO”)

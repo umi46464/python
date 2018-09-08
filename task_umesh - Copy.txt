@@ -1,0 +1,34 @@
+problem: sort the input according to binary number?
+
+def count_zeros(no_str):
+	return no_str.count('0')
+
+#input	
+task_asign = [5,10,15,20,25]
+
+def rajat_task(task_asign):
+	task_dic = {}
+	for task in task_asign:
+		bin_task = bin(task)
+		task_str = str(bin_task[2:])	
+		number_zeros = count_zeros(task_str)	
+		task_dic.update({task:number_zeros})	
+	sort_task_dic = sorted(task_dic.items(), key=lambda x: (x[1],x[0]),reverse=True)
+	
+	
+	for task in range(0,len(sort_task_dic)):	
+		
+		if len(sort_task_dic)-1 == task:
+			print(sort_task_dic[task][0])
+			break
+		ele1 = sort_task_dic[task]
+		ele2 = sort_task_dic[task+1]
+		if ele1[1] == ele2[1]:
+			if ele1[0] < ele2[0]:
+				print(ele2[0])					
+		print(ele1[0])
+			
+rajat_task(task_asign)				
+				
+				
+				
